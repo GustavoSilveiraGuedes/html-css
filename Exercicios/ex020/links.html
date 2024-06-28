@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/cat_icon.png" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+            a{
+                color: red;
+                text-decoration: none;
+                font-weight: bold;
+            }
+                a:hover{
+                    text-decoration: underline;
+                    color: darkred;
+                }
+                a:visited{
+                    color: darkred;
+                }
+                a:active{
+                    color: black;
+                }
+
+                
+                .especial::before{
+                    content: '⇒';
+                    color: rgba(169, 169, 169, 0.500);
+                }
+                .especial::after{
+                    content: '⇐';
+                    color: rgba(169, 169, 169, 0.500);
+                }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/elbatatonn/" target="_self" rel="next" class="especial">Meu insta</a></li>
+        <li><a href="https://www.youtube.com/channel/UCFEJfcP176G1jQX14_gDU9w" target="_self" rel="next" class="especial">Meu canal do Youtube</a></li>
+        <li><a href="https://www.youtube.com/@gatoanemico" target="_blank" rel="external" class="especial">Canal do Eduardo</a></li>
+    </ul>
+</body>
+</html>

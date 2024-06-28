@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+    <link rel="shortcut icon" href="Imagens/Icones/cat_icon.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>tente abrir esse site em dispositivos diferentes ou simplismente aumente ou diminua o tamanho do seu navegador</p>
+
+    <picture>
+            <source media="(max-width: 730px)" srcset="Imagens/Tamanho-img/img_pequena.png" type="image/png">
+            <source media="(max-width: 1030px)" srcset="Imagens/Tamanho-img/img_media.png" type="image/png">
+            <img src="Imagens/Tamanho-img/img_grande.png" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a Reproduzir áudios em HTML5</p> <!-- MP3(MPEG) OGG WAV -->
+
+    <audio src="midea/On_&_On.mp3" controls></audio> <!-- JEITO MAIS SIMPLES E PAIA PRQ SÓ TEM UM TIPO, VAI Q O NAVEGADOR DO CARA N TEM COMPATIBILIDADE COM mp3(AKAKAKAKAKAKAKKAKA) -->
+<br>
+    <audio controls preload="metadata" loop>
+        <source src="midea/Hero.mp3" type="audio/mpeg"><!-- SE NÃO CARREGAR O PRIMEIRO ELE VAI PARA O SEGUNDO E ASSIM POR DIANTE-->
+        <source src="midea/On_&_On.mp3" type="audio/mpeg">
+
+        <!-- SE CHEGOU ATÉ AQUI FOI PRQ O NAVEGADOR DO CARA N REPRODUZ NENHUM DOS OUTROS AUDIOS AI EM CIMA -->
+    </audio>
+
+</body>
+</html>

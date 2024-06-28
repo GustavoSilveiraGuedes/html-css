@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+    <link rel="shortcut icon" href="imagens/cat_icon.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Inserindo videos ospedados localmente</h1>
+    <p>Este video esta ospedado no meu proprio servidor</p>
+<!-- ASSIM COMO O AUDIO, O VIDEO DEVE SER COLOCADO DE VARIOS FORMATOS DIFERENTES PARA GARANTIR QUE O USUARIO TENHA ACESSO AO VIDEO -->
+
+    <video poster="" controls loop width="560">
+        <source src="midea/meu_video.mp4" type="video/mp4"><!-- CASO O NAVEGADOR N SEJA COMPATIVEL COM ESSE FORMATO ELE IRA PARA O PROXIMO, EXATAMENTE IGUAL O AUDIO -->
+        <source src="midea/meu_video.webm" type="video/webm">
+
+    <!-- SE CHEGOU ATÉ AQUI FOI PRQ O NAVEGADOR DO CARA N REPRODUZ NENHUM DOS OUTROS VIDEOS AI EM CIMA -->
+    </video>
+
+
+    <h1>Inserindo videos do youtube</h1>
+<!-- CASO O VIDEO QUE VOCÊ QUEIRA MOSTRAR NO SEU SITE ESTEJA TAMBEM NO YOUTUBE E VC UTILIZE ESSA TECNICA PARA COLOCALO EM SEU SITE, NÃO SÓ OS CUSTOS PARA MANTER SEU SITE ABAIXARAO, SENDO QUE O VIDEO ESTA SENDO TIRADO DOS SERVIDORES DO YOUTUBE, TAMBEM TRARA VISUALIZAÇOES PARA SEU VIDEO NO YOUTUBE -->
+
+<iframe
+    width="560" height="315" src="https://www.youtube.com/embed/qFdoMMR-7fc?si=Vc9tAHk_xSkn35W-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+
+    <h1>Inserindo videos do vimeo</h1>
+<!-- NESTE SITE TEM ALGUMAS VANTAGENS E DESVANTAGENS, DE VANTAGENS TEMOS QUE, TEM MAIS OPÇÕES QUE O YOUTUBE PARA EXPORTAR VIDEOS, SEUS VIDEOS PODEM SER RESTRITOS A UMA PARCELA DE PESSOAS QUE PAGUE UM CERTO VALOR, E SEU SITE NAO IRA FICAR MAIS PESADO CASO O VIDEO DE SEU CLIENTE VENHA DE LA, ENTAO C ELE QUISER GASTAR DINHEIRO PRA COLOCAR O VIDEO DELE NESSE SITE O PROBLEMA É COMPLETAMENTE DELE TENDEU ? -->
+
+<iframe
+ src="https://player.vimeo.com/video/950195113?h=c8a2e8082c" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+</iframe>
+
+</body>
+</html>
