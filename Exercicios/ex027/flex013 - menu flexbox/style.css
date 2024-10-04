@@ -17,17 +17,50 @@ body {
 }
 
     header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+
+
         padding: 10px;
 
         color: white;
         background-color: gray;
     }
         header > h1 {
-            border: 1px dashed black;
+            flex: 0 0 200px;
+
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
         }
+
         header > nav {
-            border: 1px dashed black;
-        }
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            align-items: stretch;
+            align-content: stretch;
+            }
+
+            header > nav > a {
+                padding: 10px;
+                margin: 5px;
+                border-radius: 5px;
+
+                text-decoration: none;
+                text-align: center;
+
+                color: white;
+                background-color: black;
+            }
+
+                header > nav > a:hover {
+                    color: black;
+                    background-color: white;
+
+                    transition: background-color .4s;
+                }
 
     main {
         margin: 10px;
